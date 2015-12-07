@@ -1,28 +1,45 @@
 {
-    "name":        "payum/payum-module",
+    "name": "payum/payum-module",
     "description": "Rich payment solutions for zend framework2. Paypal, payex, authorize.net, be2bill, omnipay, recurring paymens, instant notifications and many more",
-    "type":        "library",
-    "license":     "MIT",
-    "homepage":    "http://payum.forma-dev.com",
-    "keywords":    ["payum", "payment", "zf2", "zend", "paypal", "be2bill", "authorize.net", "payex", "omnipay", "recurring payment", "ipn"],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "http://payum.forma-dev.com",
+    "keywords": [
+        "payum",
+        "payment",
+        "zf2",
+        "zend",
+        "paypal",
+        "be2bill",
+        "authorize.net",
+        "payex",
+        "omnipay",
+        "recurring payment",
+        "ipn"
+    ],
     "authors": [
         {
             "name": "Kotlyar Maksim",
             "email": "kotlyar.maksim@gmail.com"
         },
         {
-            "name":     "Payum project",
+            "name": "Payum project",
             "homepage": "http://payum.forma-dev.com/"
         },
         {
-            "name":     "Community contributions",
+            "name": "Community contributions",
             "homepage": "https://github.com/Payum/PayumModule/contributors"
         }
     ],
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": "~2.2",
-        "payum/core": "1.0.*@dev"
+        "payum/core": "1.0.*@dev",
+        "zendframework/zend-http": "~2.2",
+        "zendframework/zend-servicemanager": "~2.2",
+        "zendframework/zend-mvc": "~2.2",
+        "zendframework/zend-modulemanager": "~2.2",
+        "zendframework/zend-stdlib": "~2.2",
+        "zendframework/zend-loader": "~2.2"
     },
     "suggest": {
         "payum/paypal-express-checkout-nvp": "If you want to use paypal express checkout nvp gateway",
